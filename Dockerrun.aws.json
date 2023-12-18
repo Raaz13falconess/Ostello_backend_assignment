@@ -1,0 +1,19 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "ostello_backend_image",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 3000
+      }
+    ],
+    "Volumes": [
+      {
+        "HostDirectory": "/var/app/current/uploads",
+        "ContainerDirectory": "/usr/src/app/uploads"
+      }
+    ]
+  }
+  
